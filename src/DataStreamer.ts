@@ -21,6 +21,8 @@ class DataStreamer {
    * Send request to the datafeed server and executes callback function on success
    * @param callback callback function that takes JSON object as its argument
    */
+
+  
   static getData(callback: (data: ServerRespond[]) => void): void {
     const request = new XMLHttpRequest();
     request.open('GET', DataStreamer.API_URL, false);
